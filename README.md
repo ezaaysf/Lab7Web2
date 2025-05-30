@@ -28,3 +28,4 @@ Dzikry Eza Yusuf (312310731) TI.23.A2
 Buka `xampp -> apache -> config -> php.ini`
 
 Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
+<img src="web2_p1/konfigurasi_php.png" width="max-content">
