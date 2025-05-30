@@ -23,9 +23,55 @@ Dzikry Eza Yusuf (312310731) TI.23.A2
 
 # Praktikum 1
 
-### 1.1. Aktifkan Extensi
+### Aktifkan Extensi
 
 Buka `xampp -> apache -> config -> php.ini`
 
 Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
+
 <img src="web2_p1/konfigurasi_php.png" width="max-content">
+
+### Buka Browser
+
+Ketik (http://localhost/lab11_ci/ci4/public/about) di browser. Akan muncul seperti gambar dibawah.
+
+<img src="web2_p1/installcodeigniter.png" width="max-content">
+
+### Menjalankan CLI
+
+<img src="web2_p1/spark.png" width="max-content">
+
+### Mengaktifkan Mode Debugging
+
+`Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable 
+CI_ENVIRINMENT menjadi development.`
+
+<img src="web2_p1/parseerror.png" width="max-content">
+
+### Memahami Konsep MVC (Model-View-Controller)
+
+`Membuat Route Baru.
+Tambahkan kode berikut di dalam Routes.php
+$routes->get('/about', 'Page::about');
+$routes->get('/contact', 'Page::contact');
+$routes->get('/faqs', 'Page::faqs')`
+
+**Lalu Ketik php spark routes**
+
+<img src="web2_p1/sparkroutes.png" width="max-content">
+
+### Membuat Controller
+
+<img src="web2_p1/controller.png" width="max-content">
+
+### Auto Routing
+
+<img src="web2_p1/autorouting.png" width="max-content">
+
+### Membuat View
+
+<img src="web2_p1/halamanabout.png" width="max-content">
+
+### Membuat Layout Web dengan CSS
+
+<img src="web2_p1/hal_about.png" width="max-content">
