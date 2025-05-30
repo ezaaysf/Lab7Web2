@@ -22,3 +22,9 @@ Dzikry Eza Yusuf (312310731) TI.23.A2
 ---
 
 # Praktikum 1
+
+### 1.1. Aktifkan Extensi
+
+Buka `xampp -> apache -> config -> php.ini`
+
+Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
