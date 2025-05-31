@@ -33,7 +33,7 @@ Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali 
 
 ### Buka Browser
 
-Ketik (http://localhost/lab11_ci/ci4/public/about) di browser. Akan muncul seperti gambar dibawah.
+Ketik (http://localhost/lab11_ci/ci4/public) di browser. Akan muncul seperti gambar dibawah.
 
 <img src="web2_p1/installcodeigniter.png" width="max-content">
 
