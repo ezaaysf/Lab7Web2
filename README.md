@@ -75,3 +75,30 @@ $routes->get('/faqs', 'Page::faqs')`
 ### Membuat Layout Web dengan CSS
 
 <img src="web2_p1/hal_about.png" width="max-content">
+
+
+# Praktikum 2
+
+### Membuat Artikel dengan mengakses url (http://localhost:8080/artikel)
+
+<img src="web2_p2/2.1.png" width="max-content">
+
+### Menambahkan beberapa data pada database agar dapat di tampilkan datanya
+
+<img src="web2_p2/2.2.png" width="max-content">
+
+### Membuat menu admin dengan mengakses menu admin dengan url (http://localhost:8080/admin/artikel)
+
+<img src="web2_p2/2.3.png" width="max-content">
+
+### Membuat data artikel dengan menambahkan fungsi pada Controller Artikel dengan nama add(), lalu membuat view untuk form dengan nama form_add.php
+
+<img src="web2_p2/2.4.png" width="max-content">
+
+### Mengubah data dengan menambahkan fungsi baru pada Controller Artikel dengan nama edit().
+
+<img src="web2_p2/2.5.png" width="max-content">
+
+### Menghapus Data dengan menambahkan fungsi baru pada Controller Artikel dengan nama delete().
+
+<img src="web2_p2/2.6.png" width="max-content">
