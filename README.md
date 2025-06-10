@@ -101,4 +101,4 @@ $routes->get('/faqs', 'Page::faqs')`
 
 ### Menghapus Data dengan menambahkan fungsi baru pada Controller Artikel dengan nama delete().
 
-<img src="web2_p2/2.6.png" width="max-content">
+<img src="web2_p2/2.6 delete.png" width="max-content">
