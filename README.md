@@ -124,5 +124,5 @@ $routes->get('/faqs', 'Page::faqs')`
 
 ### Membuat View untuk View Cell
 `Buat folder components di dalam ###app/Views/ `
-`Buat file #artikel_terkini.php di dalam #app/Views/components/ dengan kode berikut: `
+`Buat file artikel_terkini.php di dalam # app/Views/components/ dengan kode berikut: `
 <img src="web2_p3/3.5.png" width="max-content">
