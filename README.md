@@ -163,3 +163,69 @@ Buka url dengan alamat `http://localhost:8080/admin/artikel` ketika alamat terse
 <img src="web2_p4/4.2.png" width="max-content">
 
 ---
+
+# Praktikum 5
+
+### Membuat Pagination
+
+Untuk membuat pagination, buka Kembali `Controller Artikel`, kemudian modifikasi kode pada method `admin_index` seperti berikut:
+
+`public function admin_index() 
+ {
+   $title = 'Daftar Artikel';
+   $model = new ArtikelModel();
+   $data = [
+     'title' => $title,
+     'artikel' => $model->paginate(10), #data dibatasi 10 record per halaman
+     'pager' => $model->pager,
+   ];
+   return view('artikel/admin_index', $data);
+ }`
+
+Kemudian buka file `views/artikel/admin_index.php` dan tambahkan kode berikut 
+dibawah deklarasi tabel data.
+
+`<?= $pager->links(); ?>`
+
+<img src="web2_p5/5.1.png" width="max-comtent">
+
+### Membuat Pencarian
+
+Untuk membuat pencarian data, buka kembali `Controller Artikel`, pada method 
+`admin_index` ubah kodenya seperti berikut:
+
+`public function admin_index() 
+ {
+    $title = 'Daftar Artikel';
+    $q = $this->request->getVar('q') ?? '';
+    $model = new ArtikelModel();
+    $data = [
+        'title' => $title,
+         'q' => $q,
+         'artikel' => $model->like('judul', $q)->paginate(10), # data dibatasi 10 record per halaman
+         'pager' => $model->pager,
+    ];
+    return view('artikel/admin_index', $data);
+ }`
+
+Kemudian buka kembali file `views/artikel/admin_index.php` dan tambahkan form 
+pencarian sebelum deklarasi tabel seperti berikut:
+
+ `<form action="<?= base_url('artikel/cari') ?>" method="get" style="display: flex; align-items: center;">`
+    `<input type="text" name="keyword" placeholder="Cari data" 
+           style="padding: 10px; margin-top: 20px; margin-left: 10px; font-size: 16px; width: 250px; border: 1px solid #ccc; border-radius: 4px;">`
+    `<button type="submit" 
+            style="background-color: #007bff; color: white; border: none; padding: 10px 20px; margin-left: 5px;
+                   font-size: 17px; border-radius: 4px; cursor: pointer;"> Cari`
+    `</button>`
+`</form>`
+
+Dan pada link pager ubah seperti berikut:
+`<?= $pager->only(['q'])->links(); ?>`
+
+Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata 
+kunci tertentu pada form pencarian.
+
+<img src="web2_p5/5.2.png" width="max-content">
+
+---
