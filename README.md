@@ -105,7 +105,7 @@ $routes->get('/faqs', 'Page::faqs')`
 
 ---
 
-###Praktikum 3
+# Praktikum 3
 
 ### Membuat Layout Utama
 `Buat folder layout di dalam app/views/`
