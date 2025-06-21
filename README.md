@@ -130,3 +130,36 @@ $routes->get('/faqs', 'Page::faqs')`
 `Buat file artikel_terkini.php di dalam app/Views/components/ dengan kode berikut: `
 
 <img src="web2_p3/3.5.png" width="max-content">
+
+---
+
+# Praktikum 4
+
+### Membuat tabel user
+`CREATE TABLE user (
+ id INT(11) auto_increment,
+ username VARCHAR(200) NOT NULL,
+ useremail VARCHAR(200),
+ userpassword VARCHAR(200),
+ PRIMARY KEY(id)
+);`
+
+<img src="web2_p4/4.1.1.png" width="max-content">
+
+### Membuat Database Seeder
+<img src="web2_p4/4.1.2.png" width="max-content">
+<img src="web2_p4/4.1.3.png" width="max-content">
+
+### Uji Coba Login
+
+Selanjutnya buka URL `http://localhost:8080/user/login` 
+
+<img src="web2_p4/4.1.png" width="max-content">
+
+### Percobaan Akses Menu Admin
+
+Buka url dengan alamat `http://localhost:8080/admin/artikel` ketika alamat tersebut diakses maka, akan dimuculkan halaman login.
+
+<img src="web2_p4/4.12.png" width="max-content">
+
+---
