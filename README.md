@@ -104,3 +104,25 @@ $routes->get('/faqs', 'Page::faqs')`
 <img src="web2_p2/2.6 delete.png" width="max-content">
 
 ---
+
+#Praktikum 3
+
+### Membuat Layout Utama
+`Buat folder layout di dalam app/views/`
+`Buat file main.php di dalam folder layout dengan kode berikut: `
+<img src="web2_p3/3.1.png" width="max-content">
+<img src="web2_p3/3.2.png" width="max-content">
+
+### Modifikasi File View
+`Ubah app/Views/home.php agar sesuai dengan layout baru: `
+<img src="web2_p3/3.3.png" width="max-content">
+
+### Membuat Class View Cell 
+`Buat folder Cells di dalam app/`
+`Buat file ArtikelTerkini.php di dalam app/Cells/ dengan kode berikut: `
+<img src="web2_p3/3.4.png" width="max-content">
+
+### Membuat View untuk View Cell
+`Buat folder #components di dalam #app/Views/ `
+`Buat file #artikel_terkini.php di dalam #app/Views/components/ dengan kode berikut: `
+<img src="web2_p3/3.5.png" width="max-content">
