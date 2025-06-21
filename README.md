@@ -160,6 +160,6 @@ Selanjutnya buka URL `http://localhost:8080/user/login`
 
 Buka url dengan alamat `http://localhost:8080/admin/artikel` ketika alamat tersebut diakses maka, akan dimuculkan halaman login.
 
-<img src="web2_p4/4.12.png" width="max-content">
+<img src="web2_p4/4.2.png" width="max-content">
 
 ---
