@@ -226,3 +226,22 @@ kunci tertentu pada form pencarian.
 <img src="web2_p5/5.2.png" width="max-content">
 
 ---
+
+# Praktikum 6
+
+### Upload Gambar pada Artikel 
+
+Buka kembali `Controller Artikel` pada project sebelumnya, sesuaikan kode pada method `add` seperti berikut : 
+<img src="web2_p6/6.1.1.png" width="max-content">
+
+Kemudian pada file `views/artikel/form_add.php` tambahkan field input file seperti berikut : 
+<img src="web2_p6/6.1.2.png" width="max-content">
+
+Dan sesuaikan tag form dengan menambahkan `ecrypt type` seperti berikut : 
+<img src="web2_p6/6.1.3.png" width="max-content">
+
+### Uji coba file upload dengan mengakses menu tambahan artikel :
+`localhost:8080/admin/artikel/add`
+<img src="web2_p6/6.1.png" width="max-content">
+
+---
